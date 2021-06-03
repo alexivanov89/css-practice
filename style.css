@@ -305,13 +305,15 @@ main {
     width: 24px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .header {
         width: 327px;
     }
 
     .products {
+        margin: 16px;
         width: 327px;
+        justify-content: center;
     }
 
     main {
