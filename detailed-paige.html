@@ -11,11 +11,11 @@
     <body>
         <header class="header">
             <div class="search">
-                <div class="icon">
-                    <!-- add class: icon_search-active -->
-                    <div class="icon_search"></div>
-                </div>
                 <input id="search_input" class="search_input" type="text" placeholder="Search products" />
+                <div class="icon_search">
+                    <img src="./img/search.svg" alt="search-active" />
+                    <img src="./img/search-active.svg" alt="search-active" />
+                </div>
             </div>
             <div class="buttons">
                 <div class="shopping_cart">
@@ -53,20 +53,22 @@
                     <div class="product_commerce">
                         <div class="product_page_price">$129</div>
                         <div class="product_quantity">
-                            <button class='btn'>-</button>
-                            <input class='product_input' type="number" value="1" >
-                            <button class='btn'>+</button>
+                            <button class='btn btn-dec'>-</button>
+                            <input class='product_input' type="number" value="1" min="1" >
+                            <button class='btn btn-inc'>+</button>
                         </div>
 
                         <div class="add-cart">
                             <a href="">Add to cart</a>
                         </div>
-                        <div class="product_favorite ">
+                        <!-- add class: favorite-active -->
+                        <div class="product_favorite">
                         </div>
                     </div>
                 </div>
                 </div>
             </section>
         </main>
+        <script type="text/javascript" src="scriptsDetailPage.js"></script>
     </body>
 </html>

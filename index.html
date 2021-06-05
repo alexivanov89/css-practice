@@ -11,11 +11,11 @@
     <body>
         <header class="header">
             <div class="search">
-                <div class="icon">
-                    <!-- add class: icon_search-active -->
-                    <div class="icon_search"></div>
-                </div>
                 <input id="search_input" class="search_input" type="text" placeholder="Search products" />
+                <div class="icon_search">
+                    <img src="./img/search.svg" alt="search-active" />
+                    <img src="./img/search-active.svg" alt="search-active" />
+                </div>
             </div>
             <div class="buttons">
                 <div class="shopping_cart">
@@ -41,7 +41,8 @@
                     </div>
                     <div class="products__item">
                         <div class="favorite">
-                            <div class="heart active"></div>
+                            <!-- add class: heart-active -->
+                            <div class="heart heart-active"></div>
                         </div>
                         <div class="product_image-item">
                             <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
@@ -182,5 +183,6 @@
                 </div>
             </section>
         </main>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
