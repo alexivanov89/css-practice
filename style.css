@@ -26,13 +26,9 @@ a {
     height: 40px;
 }
 
-.icon {
-    display: none;
-    position: absolute;
-}
 
 .search_input {
-    max-width: 300px;
+    display: flex;
     height: 40px;
     padding: 8px 0 8px 32px;
     border: none;
@@ -79,11 +75,15 @@ a {
     margin-left: 10px;
 }
 
-main {
+main,
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 24px;
+}
+
+main {
+    margin: 0 24px;
 }
 
 .products {
@@ -175,6 +175,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
 }
 
@@ -187,7 +189,9 @@ main {
 }
 
 .product_info {
-    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
 }
 
 .title-description {
@@ -221,7 +225,6 @@ main {
 
 .product_commerce {
     display: flex;
-    justify-content: center;
     align-items: center;
 
 }
@@ -238,25 +241,35 @@ main {
 
 .product_quantity {
     display: flex;
-    width: 180px;
+    max-width: 180px;
     height: 40px;
     margin: 0 16px;
+    border: 1px solid #000000;
 }
 
 .btn {
-    width: 40px;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 38px;
     color: #E97F03;
     background: #ffffff;
     font-size: 24px;
     cursor: pointer;
+    border: none;
 }
 
 .product_input {
+    display: flex;
     width: 100px;
-    height: 40px;
+    height: 38px;
     text-align: center;
     font-size: 24px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: none;
+    border-bottom: none;
 }
 
 .add-cart {
@@ -290,7 +303,6 @@ main {
     height: 24px;
     position: relative;
     justify-content: center;
-    cursor: pointer;
     margin-left: 18px;
 }
 
@@ -302,6 +314,7 @@ main {
     background: url(./img/heart.svg) center no-repeat;
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .favorite-active::after {
@@ -312,34 +325,46 @@ main {
     background: url(./img/heart-active.svg) center no-repeat;
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 /* media-queries */
-@media screen and (max-width:536px) {
+@media screen and (max-width:488px) {
+
+    .products {
+        margin: 0 24px;
+    }
 
     .products__item {
-        max-width: 40%;
+        max-width: 155px;
     }
 }
 
 /* media-queries product detail page */
-@media screen and (max-width:767px) {
+@media screen and (max-width:836px) {
+
+    main {
+        margin: 0;
+    }
 
     .product {
         flex-direction: column;
-        margin-top: 16px;
     }
 
     .product_image {
-        padding-top: 16px;
+        border: none;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
-        background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
-        background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
         background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 50%);
     }
 
     .product_info {
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content;
+    }
+
+    .product_commerce {
+        justify-content: center;
     }
 
     .title-description {
@@ -367,14 +392,17 @@ main {
 
     .product_quantity {
         order: 3;
-        margin: 0;
-        width: 45%;
-        margin-top: 16px;
+        margin: 16px 0;
+        max-width: 140px;
+    }
+
+    .product_input {
+        width: 60px;
     }
 
     .add-cart {
         order: 4;
         width: 160px;
-        margin-top: 16px;
+        margin: 16px 0;
     }
 }
