@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
                         <div class="heart${this.heartActive}"></div>
                     </div>
                     <div class="product_image-item">
-                        <a id=${this.id}  href="./detailed-paige.html"><img class="image" src=${baseURL}${this.picture.path} alt=${this.picture.alt} /></a>
+                        <a id=${this.id}  href="../detailed-paige.html"><img class="image" src=${baseURL}${this.picture.path} alt=${this.picture.alt} /></a>
                     </div>
-                    <div class="product_title"><a id=${this.id} class="name" href="./detailed-paige.html">${this.name}</a></div>
+                    <div class="product_title"><a id=${this.id} class="name" href="../detailed-paige.html">${this.name}</a></div>
                     <div class="product_price">$${this.price.value}</div>
             `;
             element.classList.add('products__item');

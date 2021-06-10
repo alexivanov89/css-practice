@@ -134,7 +134,7 @@ main {
 .heart::after {
     display: block;
     content: "";
-    background: url(./img/heart.svg) center no-repeat;
+    background: url(../assets/heart.svg) center no-repeat;
     height: 24px;
     width: 24px;
 }
@@ -142,7 +142,7 @@ main {
 .heart-active::after {
     display: block;
     content: "";
-    background: url(./img/heart-active.svg) center no-repeat;
+    background: url(../assets/heart-active.svg) center no-repeat;
     height: 24px;
     width: 24px;
 }
@@ -305,7 +305,7 @@ main {
     position: absolute;
     right: 0;
     content: "";
-    background: url(./img/heart.svg) center no-repeat;
+    background: url(../assets/heart.svg) center no-repeat;
     height: 24px;
     width: 24px;
 }
@@ -315,7 +315,7 @@ main {
     position: absolute;
     right: 0;
     content: "";
-    background: url(./img/heart-active.svg) center no-repeat;
+    background: url(../assets/heart-active.svg) center no-repeat;
     height: 24px;
     width: 24px;
 }

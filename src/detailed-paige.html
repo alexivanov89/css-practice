@@ -3,35 +3,30 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Detailed Page</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
-        <script type="module" src="getProducts.js"></script>
     </head>
     <body>
         <header class="header">
             <div class="search">
                 <input id="search_input" class="search_input" type="text" placeholder="Search products" />
                 <div class="icon_search">
-                    <img src="./img/search.svg" alt="search-active" />
-                    <img src="./img/search-active.svg" alt="search-active" />
+                    <img src="./assets/search.svg" alt="search-active" />
+                    <img src="./assets/search-active.svg" alt="search-active" />
                 </div>
             </div>
             <div class="buttons">
                 <div class="shopping_cart">
-                    <a href="#"><img src="./img/basket.svg" alt="basket" /></a>
+                    <a href="#"><img src="./assets/basket.svg" alt="basket" /></a>
                 </div>
                 <div class="account">
-                    <a href="#"><img src="./img/account.svg" alt="basket" /></a>
+                    <a href="#"><img src="./assets/account.svg" alt="basket" /></a>
                 </div>
             </div>
         </header>
         <main>
-            <section>
-                <div class="products"></div>
-            </section>
+            <section class="product_card"></section>
         </main>
-        <script type="module" src="scripts.js"></script>
     </body>
 </html>
