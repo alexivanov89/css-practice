@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.onload = function () {
     const input = document.querySelector('.product_input');
     const buttonDec = document.querySelector('.btn-dec');
     const buttonInc = document.querySelector('.btn-inc');
@@ -22,4 +22,4 @@ window.addEventListener('load', () => {
     buttonInc.addEventListener('click', increase);
 
     favorite.addEventListener('click', toggleFavorite);
-});
+};

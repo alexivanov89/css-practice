@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <script type="module" src="getProducts.js"></script>
     </head>
     <body>
         <header class="header">
@@ -28,163 +29,9 @@
         </header>
         <main>
             <section>
-                <div class="products">
-                    <!--
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart heart-active"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    <div class="products__item">
-                        <div class="favorite">
-                            <div class="heart"></div>
-                        </div>
-                        <div class="product_image-item">
-                            <a href="./detailed-paige.html"><img class="image" src="./img/ghome.jpg" alt="ghome" /></a>
-                        </div>
-                        <div class="product_title"><a href="./detailed-paige.html">G Home</a></div>
-                        <div class="product_price">$129</div>
-                    </div>
-                    -->
-                </div>
+                <div class="products"></div>
             </section>
         </main>
-        <script type="module" src="getProducts.js"></script>
         <script type="module" src="scripts.js"></script>
     </body>
 </html>

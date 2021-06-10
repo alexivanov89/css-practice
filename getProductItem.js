@@ -55,10 +55,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // localStorage.getItem('id');
     let id = '571fc60d-ea2c-469e-a5b6-c229d31f195d';
     getResource(`http://localhost:3006/item/:${id}`).then((data) => {
         const { id, name, description, info, details, like, picture, price } = data.content;
-        new ProductCard(id, name, description, info, details, like, picture, price, '.product').render();
+        new ProductCard(id, name, description, info, details, like, picture, price, '.product_card').render();
     });
 });
