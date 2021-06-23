@@ -11,24 +11,30 @@ window.addEventListener('DOMContentLoaded', () => {
             this.price = price;
             this.parent = document.querySelector(parentSelector);
             this.heartActive = '';
+            this.currency = null;
         }
 
         render() {
             if (this.like) {
                 this.heartActive = ' heart-active';
             }
+
+            if (this.price.currency === 'USD') {
+                this.currency = '$';
+            }
+
             const baseURL = 'http://localhost:3006';
 
             const element = document.createElement('div');
             element.innerHTML = `
-                    <div class="favorite">
-                        <div class="heart${this.heartActive}"></div>
-                    </div>
-                    <div class="product_image-item">
-                        <a id=${this.id}  href="../detailed-paige.html"><img class="image" src=${baseURL}${this.picture.path} alt=${this.picture.alt} /></a>
-                    </div>
-                    <div class="product_title"><a id=${this.id} class="name" href="../detailed-paige.html">${this.name}</a></div>
-                    <div class="product_price">$${this.price.value}</div>
+                <div class="favorite">
+                    <div class="heart${this.heartActive}"></div>
+                </div>
+                <div class="product_image-item">
+                    <a id="${this.id}"  href="../detailed-paige.html"><img class="image" src="${baseURL}${this.picture.path}" alt="${this.picture.alt}" /></a>
+                </div>
+                <div class="product_title"><a id="${this.id}" class="name" href="../detailed-paige.html">${this.name}</a></div>
+                <div class="product_price">${this.currency}${this.price.value}</div>
             `;
             element.classList.add('products__item');
             this.parent.append(element);
